@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>新增mock</title>
+		<link rel="stylesheet" type="text/css" href="css/add.css" />
+
+	</head>
+
+	<body>
+		<div class="main-box" id="app">
+			<div class="title">
+				<input type="text" id="mockUrl" v-model="url" placeholder="mock请求地址" >
+			</div>
+			<div class="content">
+				<textarea id="mockText" v-model="text" placeholder="mock返回内容"></textarea>
+			</div>
+			<div class="submit-box">
+				<a class="submit-btn" href="javascript:;" id="submitBtn" @click="mockSave">提交</a>
+			</div>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/add.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

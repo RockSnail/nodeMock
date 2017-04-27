@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>mock列表</title>
+		<link rel="stylesheet" type="text/css" href="css/list.css" />
+	</head>
+
+	<body>
+		<div class="main-box" id="app">
+			<a href="javascript:;" @click="mockAdd()">新增</a>|
+			<a href="javascript:;" @click="mockTest()">测试</a>
+			<table >
+				<thead>
+					<th>功能列</th>
+					<th>mock地址</th>
+					<th>mock内容</th>
+				</thead>
+				<tr v-for="(item, index) in listData">
+					<td>
+						<div>
+							<a href="javascript:;" @click="editMock(item)">修改</a>|
+							<a href="javascript:;" @click="mockDel(item)">删除</a>
+						</div>
+					</td>
+					<td style="color: #FF0000;"  v-text="item.url"></td>
+					<td v-text="item.text"></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

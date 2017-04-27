@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.main-box{
+	width: 500px;
+	height: 800px;
+	margin: 0 auto;
+}
+.main-box .title input{
+	display: block;
+	margin: 20px auto 0;
+	width: 480px;
+	height: 30px;
+}
+
+.main-box .content textarea{
+	display: block;
+	width: 480px;
+	height: 600px;
+	margin: 50px  auto 0;
+	resize: none;
+}
+.main-box .submit-box{
+	width: 500px;
+	height: 80px;
+	margin-top: 20px;
+}
+.main-box .submit-btn{
+	display: block;
+	width: 480px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 auto;
+	background-color: red;
+}
